@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+        <div id="main">
+        <p id="description">Let us know how we can improve freeCodeCamp.</p>
+        <form  id="survey-form">
+                    <div class="row-tab">
+                            <div class="labels">
+                                    <label id='name-label'>Name: </label>
+                            </div>
+                            <div class="right-tab">
+                                    <input type="text" id='name' placeholder='fill your info' class="input-field" autofocus required>
+                            </div>
+                    </div>
+                    <div class="row-tab">
+                            <div class="labels">
+                                <label id='email-label'>email: </label>
+                            </div>
+                            <div class="right-tab">
+                                    <input type="email" id='email' class="input-field" autofocus placeholder='fill your info' required>
+                            </div>
+                    </div>
+                    <div class="row-tab">
+                            <div class="labels">
+                                    <label id='number-label'>Age: </label>
+                            </div>
+                            <div class="right-tab">
+                                    <input type="number" id='number'  placeholder='fill your info' class="input-field" autofocus required min='18' max="70">
+                            </div>
+                    </div>
+                    <div class="row-tab">
+                            <div class="labels">
+                                    <label>Which option best describes your current role?
+                                    </label>
+                            </div>
+                            <div class="right-tab">
+                                    <select id="dropdown">
+                                            <option value="None" disabled>None</option>
+                                                <option value="Student">Student</option>
+                                                <option value="Full time job">Full time job</option>
+                                                <option value="Part time job">Part time job</option>
+                                    </select>
+                            </div>
+                    </div>
+                    <div class="row-tab">
+                        <div class="labels">
+                            <label>
+                                How likely is that you would recommend freeCodeCamp to a friend?
+                            </label>
+                        </div>
+                         <div class="right-tab">
+                             <ul style="list-style:none">
+                                    <li class="radio">
+                                            <input type="radio" name="recommend" id="Yes" value="Yes" class="userRatings">
+                                            <label for="Yes">Yes</label>
+                                    </li>
+                                    <li class="radio">
+                                            <input type="radio" name="recommend" id="No" value="No" class="userRatings">
+                                            <label for="No">No</label>
+                                    </li>
+                                    <li class="radio">
+                                            <input type="radio" name="recommend" id="Maybe" value="Maybe" class="userRatings">
+                                            <label for="Maybe">Maybe</label>
+                                    </li>
+                             </ul>
+                         </div>
+                    </div>
+                    <div class="row-tab">
+                            <div class="labels">
+                                    <label>Things that should be improved in the future
+                                            (Check all that apply):</label>
+                            </div>
+                            <div class="right-tab">
+                                    <ul style="list-style:none">
+                                            <li class="checkbox">
+                                                    <input type="checkbox" name="app" value="None" class="userRatings">
+                                                    <label>None</label>
+                                            </li>
+                                            <li class="checkbox">
+                                                    <input type="checkbox" name="app" value="Quality" class="userRatings">
+                                                    <label>Quality</label>
+                                            </li>
+                                            <li class="checkbox">
+                                                    <input type="checkbox" name="app" value="Difficulity" class="userRatings">
+                                                    <label>Difficulity</label>
+                                            </li>
+                                            <li class="checkbox">
+                                                    <input type="checkbox" name="app" value="Quantity" class="userRatings">
+                                                    <label>Quantity</label>
+                                            </li>
+                                    </ul>
+                            </div>
+                    </div>
+                    
+                    <div class="rowTab">
+                            <div class="labels-x">
+                              <label for="comments">Any Comments or Suggestions?</label>
+                            </div>
+                            <div class="rightTab">
+                              <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+                            </div>
+                          </div>
+                          <button id="submit" type="submit">Submit</button>
+            </form>
+    </div>
+</body>
+</html>
